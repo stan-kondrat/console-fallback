@@ -55,7 +55,7 @@
     }
 
     try {
-        window.console = fConsole;
+        g.console = fConsole;
     } catch (e) {
         console.log('cannot overwrite existing console object');
     }
