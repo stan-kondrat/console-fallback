@@ -46,7 +46,7 @@
         };
 
         fConsole.timeEnd = function(title){
-            if(typeof title !== 'string' || self.timers[title]) return;
+            if(typeof title !== 'string' || !self.timers[title]) return;
 
             var execTime = +new Date() - self.timers[title];
             delete self.timers[title];
@@ -54,6 +54,10 @@
         };
     }
 
-    g.console = fConsole;
+    try {
+        window.console = fConsole;
+    } catch (e) {
+        console.log('cannot overwrite existing console object');
+    }
 
 }(window));

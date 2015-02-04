@@ -1,7 +1,7 @@
 {
   "name": "console-fallback",
   "main": "console-fallback.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/stan-kondrat/console-fallback",
   "description": "Fallback javascript console logging functions (error, warn, info, time, timeEnd, etc)",
   "moduleType": [
